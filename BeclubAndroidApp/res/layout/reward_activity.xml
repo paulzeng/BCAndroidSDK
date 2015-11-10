@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f7f7f7"
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/rewardNotEnough">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/b_activity_background">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                layout="@layout/sections_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/b_line_divider_top_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rewardBrandName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="New Text"
+                    android:textColor="@color/b_bestore_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rewardImageContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <com.beintoo.utils.ui.RoundImageView
+                        android:id="@+id/rewardImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="132dp"
+                        android:scaleType="centerCrop" />
+
+                    <RelativeLayout
+                        android:id="@+id/rewardPriceContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/bestore_corner_item_border"
+                            android:gravity="center"
+                            android:minWidth="80dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                            <TextView
+                                android:id="@+id/rewardPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/b_yellow_bedollars"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/bedollars_logo"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@id/rewardPrice"
+                                android:src="@drawable/bed_small" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_progress"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ProgressBar
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progressDrawable="@drawable/green_progress_bar"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/reward_progress_bar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingRight="4dp"
+                            android:id="@+id/tv_reward_percentage"
+                            android:text="@string/bestore_missing_bedollars_percentage"
+                            android:textColor="@color/b_white"
+                            android:layout_alignRight="@+id/reward_progress_bar"
+                            android:layout_alignEnd="@+id/reward_progress_bar" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/reward_missing_bedollars_count"
+                        android:background="@drawable/earn_bedollars_item_border"
+                        android:textStyle="italic"
+                        android:textSize="12sp"
+                        android:text="@string/bestore_missing_bedollars_for_reward"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/couponContainer"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Card number"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:textColor="@color/b_coupon_titles"
+                        android:id="@+id/couponCodeDesc" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="14ruhgsgaosdb"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/b_green"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textIsSelectable="true"
+                        android:id="@+id/couponCode" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pin number"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:textColor="@color/b_coupon_titles"
+                        android:id="@+id/couponPinDesc" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="14ruhgsgaosdb"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/b_green"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/couponPin" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/couponQrImage" />
+
+                    <RelativeLayout
+                        android:id="@+id/coupon_url_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/green_button"
+                        android:clickable="true"
+                        android:visibility="gone"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <TextView
+                            android:id="@+id/bestore_url_button_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:shadowColor="#000"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="1"
+                            android:text="@string/bestore_url_coupon"
+                            android:textColor="#fff"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/b_sections_header_text"
+                        android:textSize="12sp"
+                        android:textStyle="italic"
+                        android:text="@string/bestore_counter_show"
+                        android:id="@+id/coupon_payoff"
+                        android:layout_marginBottom="4dp" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/b_line_divider_top_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:id="@+id/share_buttons_container">
+
+                    <ImageButton
+                        android:id="@+id/facebook_share"
+                        android:src="@drawable/share_fb"
+                        android:background="@drawable/grey_highlight"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+
+                    <ImageButton
+                        android:id="@+id/twitter_share"
+                        android:src="@drawable/share_twitter"
+                        android:background="@drawable/grey_highlight"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+
+                    <ImageButton
+                        android:id="@+id/gplus_share"
+                        android:src="@drawable/share_google"
+                        android:background="@drawable/grey_highlight"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+
+                    <ImageButton
+                        android:id="@+id/sms_share"
+                        android:src="@drawable/share_message"
+                        android:background="@drawable/grey_highlight"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+
+                    <ImageButton
+                        android:id="@+id/email_share"
+                        android:src="@drawable/share_mail"
+                        android:background="@drawable/grey_highlight"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/rewardName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="New Text"
+                        android:textColor="@color/b_bestore_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/rewardDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="New Text"
+                        android:textColor="@color/b_sections_header_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/rewardExpires"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="New Text"
+                        android:textColor="@color/b_sections_header_text"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/b_line_divider_top_gray" />
+
+                    <TextView
+                        android:id="@+id/red_instructions_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bestore_redemption_instructions"
+                        android:textColor="@color/b_bestore_terms"
+                        android:visibility="gone"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/red_instructions_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:visibility="gone"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/b_bestore_terms"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bestore_terms"
+                        android:textColor="@color/b_bestore_terms"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/rewardTerms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/b_bestore_terms"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/storesButton"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/grey_button"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pin"
+                    android:paddingLeft="8dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/imageView2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/imageView" />
+
+                <TextView
+                    android:id="@+id/storeButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bestore_stores_button"
+                    android:textColor="@color/b_green"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_alignTop="@+id/imageView"
+                    android:layout_toRightOf="@+id/imageView2" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/rewardNotEnough"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/bestore_not_enough"
+        android:textColor="@color/b_bestore_text"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_above="@+id/actionButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:id="@+id/actionButton"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/green_button"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/actionButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/bestore_redeem"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

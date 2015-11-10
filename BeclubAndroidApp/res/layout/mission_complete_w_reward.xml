@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/earn_bedollars_reward_mission_completed"
+        android:gravity="center"
+        android:textColor="@color/b_white"
+        android:background="@color/b_green"
+        android:id="@+id/mission_dialog_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:visibility="visible"
+            android:id="@+id/mission_completed_offer_image" />
+
+        <TextView
+            android:layout_below="@+id/mission_completed_offer_image"
+            android:layout_width="fill_parent"
+            android:background="@color/b_light_gray"
+            android:layout_height="35dp"
+            android:text="New Text"
+            android:gravity="center"
+            android:textColor="@color/b_bestore_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/mission_bedollars_amount" />
+
+
+        <ImageView
+            android:layout_below="@+id/mission_completed_offer_image"
+            android:layout_marginTop="-20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bedollar_mission_sx" />
+
+        <ImageView
+            android:layout_below="@+id/mission_completed_offer_image"
+            android:layout_marginTop="-20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bedollar_mission_dx" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textSize="12sp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/b_bestore_text"
+        android:id="@+id/mission_completed_offer_name" />
+
+    <RelativeLayout
+        android:id="@+id/coupon_url_button"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/green_button"
+        android:clickable="true"
+        android:visibility="visible"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/earn_bedollars_misson_completed_view_reward"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/b_gray_texts" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:id="@+id/share_buttons_container"
+        android:background="@color/b_light_gray">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="@string/earn_bedollars_misson_completed_share"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/b_gray_texts" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/share_buttons_container"
+            android:background="@android:color/transparent">
+
+            <ImageButton
+                android:id="@+id/facebook_share"
+                android:src="@drawable/share_fb"
+                android:background="@drawable/grey_highlight"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp" />
+
+            <ImageButton
+                android:id="@+id/twitter_share"
+                android:src="@drawable/share_twitter"
+                android:background="@drawable/grey_highlight"
+                android:layout_marginRight="10dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp" />
+
+            <ImageButton
+                android:id="@+id/gplus_share"
+                android:src="@drawable/share_google"
+                android:background="@drawable/grey_highlight"
+                android:layout_marginRight="10dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

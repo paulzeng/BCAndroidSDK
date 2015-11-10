@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tutorial_mainText1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/b_green"
+            android:id="@+id/title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tutorial_descText1"
+            android:textSize="13sp"
+            android:textColor="@color/b_bestore_text"
+            android:layout_below="@id/title"
+            android:id="@+id/text" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:src="@drawable/tutorial_01"
+        android:id="@+id/imageSwitcher" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:visibility="gone"
+        android:src="@drawable/tutorial_03"
+        android:id="@+id/imageSwitcher3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:visibility="gone"
+        android:src="@drawable/tutorial_04"
+        android:id="@+id/imageSwitcher4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:visibility="gone"
+        android:src="@drawable/tutorial_05"
+        android:id="@+id/imageSwitcher5" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:id="@+id/skip_next_container"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="#686868"
+            android:textSize="14sp"
+            android:text="@string/tutorial_skip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/white_and_green_highlight"
+            android:id="@+id/skip" />
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:background="@color/b_line_divider_top_gray"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_height="match_parent"
+            android:text="@string/tutorial_next"
+            android:textColor="@color/b_bestore_text"
+            android:background="@drawable/white_and_green_highlight"
+            android:clickable="true"
+            android:id="@+id/next" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="35dp"
+        android:textSize="14sp"
+        android:textColor="@color/b_green"
+        android:text="@string/tutorial_start"
+        android:background="@drawable/white_and_green_highlight"
+        android:visibility="gone"
+        android:id="@+id/get_started" />
+</LinearLayout>

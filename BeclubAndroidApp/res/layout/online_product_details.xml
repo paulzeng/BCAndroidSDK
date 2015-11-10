@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b_activity_background"
+    android:id="@+id/content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp"
+            android:background="@drawable/earn_bedollars_item_border"
+            android:padding="2dp"
+            android:layout_margin="16dp"
+            android:id="@+id/rl_image_container">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/container">
+            </FrameLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rl_image_container"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:text="COAT"
+            android:id="@+id/tv_product_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_product_name"
+            android:textSize="16sp"
+            android:text="GAP"
+            android:id="@+id/tv_brand_name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/b_light_gray_texts"
+            android:layout_below="@id/tv_brand_name"
+            android:layout_marginTop="8dp"
+            android:id="@+id/ll_divider"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/online_get_it_for"
+            android:layout_below="@id/ll_divider"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_divider"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="$150.00"
+            android:id="@+id/tv_cost"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/rl_bedollars"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/earn_bedollars_item_border_gray"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/online_and_earn"
+                android:textColor="@color/b_yellow_bedollars"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bed_small"
+                android:id="@+id/iv_bedollars"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/b_yellow_bedollars"
+                android:text="20"
+                android:id="@+id/tv_qnt_bedollars"
+                android:layout_alignBottom="@+id/iv_bedollars"
+                android:layout_toLeftOf="@+id/iv_bedollars"
+                android:layout_toStartOf="@+id/iv_bedollars" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/b_light_gray_texts"
+            android:layout_below="@id/rl_bedollars"
+            android:layout_marginTop="16dp"
+            android:id="@+id/ll_divider_bottom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="14sp"
+            android:text="@string/online_click_link_below"
+            android:layout_below="@id/ll_divider_bottom"
+            android:id="@+id/tv_click_either"/>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/action_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tv_click_either"
+            android:layout_marginTop="16dp"
+            android:id="@+id/rl_action_button"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/rl_action_button"
+            android:padding="16dp"
+            android:background="@color/b_sections_header_background"
+            android:id="@+id/rl_all_participant_store">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_text"
+                android:text="@string/online_buy_from_phone"
+                android:textColor="@color/b_green"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/imageView2" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/b_line_divider_top_gray"
+            android:layout_alignTop="@+id/rl_all_participant_store" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Your BeClub balance will be updated a few days after your purchase"
+            android:layout_below="@id/rl_all_participant_store"
+            android:textStyle="italic"
+            android:padding="8dp"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/b_line_divider_top_gray"
+            android:layout_alignBottom="@+id/rl_all_participant_store" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

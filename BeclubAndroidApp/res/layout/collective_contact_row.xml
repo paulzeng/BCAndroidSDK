@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/collective_image" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome Cognome"
+            android:id="@+id/collective_name"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="#353535" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already invited"
+            android:id="@+id/already_invited"
+            android:layout_below="@id/collective_name"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/b_green" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/collective_checkBox"
+            android:layout_marginRight="10dp"
+            android:checked="false" />
+    </RelativeLayout>
+
+</LinearLayout>

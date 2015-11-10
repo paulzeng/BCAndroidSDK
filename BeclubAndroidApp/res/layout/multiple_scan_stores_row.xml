@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/listview_row_selector">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_marginTop="8dp"
+            android:id="@+id/store_name"
+            android:textSize="14sp"
+            android:textColor="@color/b_bestore_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textColor="@color/b_sections_header_text"
+            android:textSize="12sp"
+            android:paddingBottom="8dp"
+            android:id="@+id/store_address"
+            android:layout_below="@+id/store_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/earn_bedollars_walkin_done"
+            android:visibility="gone"
+            android:paddingBottom="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/b_green"
+            android:textSize="14sp"
+            android:id="@+id/done"
+            android:layout_below="@+id/store_address" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+00.00"
+        android:id="@+id/store_distance"
+        android:layout_marginRight="4dp"
+        android:textColor="@color/b_green"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:id="@+id/arrow"
+        android:src="@drawable/arrow"
+        android:layout_marginRight="5dp" />
+</LinearLayout>

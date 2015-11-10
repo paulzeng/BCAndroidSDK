@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/settings_main_push_notifications"
+            android:textAllCaps="true"
+            android:textColor="@color/b_green"
+            android:id="@+id/section_name" />
+
+        <RelativeLayout
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/b_green" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/settings_push_location_based" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/cb_location_based" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/b_line_divider_bottom_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/settings_push_bedollars_earn" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/cb_bedollars_earn" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/b_line_divider_bottom_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/settings_push_beclub_updates" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/cb_beclub_updates" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/b_line_divider_bottom_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/settings_push_user_highlights" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/cb_user_highlights" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/b_line_divider_bottom_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/green_button"
+            android:clickable="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/update_settings"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_push_update"
+                android:id="@+id/textView2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/settings_push_notify_subtitle"
+            android:textColor="@color/b_gray_texts" />
+    </LinearLayout>
+</ScrollView>

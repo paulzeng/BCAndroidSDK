@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id">152837841401121</string>
+
+    <string name="app_name">BeClub</string>
+    <string name="action_help">Help</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="close">Close</string>
+    <string name="ok">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="logout">Logout</string>
+    <string name="logout_message">Are you sure you want to logout from BeClub?</string>
+    <string name="account_delete_message">Are you really sure you want to delete your BeClub account? You\'ll be missing out!</string>
+    <string name="account_deleted">Account deleted. Your BeClub account has been successfully deleted. We\'re going to miss you </string>
+    <string name="connection_error">Oops. Looks like you\'re not connected to the Internet. Please check your connection and try again.</string>
+    <string name="email_not_valid">Email address not valid</string>
+
+    <string name="something_wrong">Mm, something went wrong</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+
+    <string name="value_bedollars">%d BeDollars</string>
+    <string name="value_no_bedollars">%d</string>
+
+    <string name="loading_dialog">Loading...</string>
+
+    <string name="header_my_balance">My Balance</string>
+
+    <string name="member_entry">Welcome to Beintoo</string>
+
+    <string name="lateral_menu_bestore">BeStore</string>
+    <string name="lateral_menu_earn_bedollars">Earn BeDollars</string>
+    <string name="lateral_menu_wallet">Wallet</string>
+
+    <!-- SIGNUP/LOGIN ETC -->
+    <string name="facebook_login">CONNECT WITH FACEBOOK</string>
+    <string name="signup_by_email">Register by email</string>
+    <string name="existing_account">I already have an account</string>
+    <string name="register_title">Register</string>
+    <string name="account_details">ACCOUNT DETAILS</string>
+    <string name="account_details_email">Your email address</string>
+    <string name="account_details_email_error">Invalid email</string>
+    <string name="account_details_email_warning">Is this correct? We\'ll ask you to verify this address to access all the features of the BeClub</string>
+    <string name="account_email_already_registered">You\'ve already registered to the BeClub. Sign in now</string>
+    <string name="account_details_password">Password (min 8 characters)</string>
+    <string name="account_details_password_error">Password too short (min 8 characters)</string>
+    <string name="account_coppa_compliant">Sorry, we were unable to process your registration</string>
+
+    <string name="personal_details">PERSONAL DETAILS</string>
+    <string name="personal_details_firstname">First name</string>
+    <string name="personal_details_firstname_error">Please provide your first name</string>
+    <string name="personal_details_lastname">Last name</string>
+    <string name="personal_details_lastname_error">Please provide your last name</string>
+    <string name="personal_details_birthday">Birthday</string>
+    <string name="personal_details_birthday_error">Please provide your date of birth</string>
+    <string name="personal_details_male">Male</string>
+    <string name="personal_details_female">Female</string>
+    <string name="personal_details_gender_error">Please select</string>
+    <string name="fb_information_missing">Hi there,\n\nWelcome to the BeClub! You look nice today!\n\nFill in the fields below to complete your BeClub account. From now on, you’ll be able to log into your account with Facebook.</string>
+    <string name="register_disclaimer"><![CDATA[By registering with the BeClub you accept our <a href="http://static.beintoo.com/beclub-app/help/tos.html"><b>Terms of Service and Privacy policy</b></a>. Your information will not be shared with third parties.]]></string>
+    <string name="register_required_info">This information is required by our Terms of Service and allows us to provide you with a better BeClub experience.</string>
+    <string name="register_button">Register now</string>
+
+    <string name="register_fruit_ninja_title">Coming from Fruit Ninja?</string>
+    <string name="register_fruit_ninja_msg">Log in with Facebook to access your BeClub account</string>
+
+    <string name="postsignup_1">Welcome to the</string>
+    <string name="postsignup_2">Here\'s your welcome gift</string>
+    <string name="postsignup_3">10 BeDollars</string>
+    <string name="postsignup_4">We\'ve also sent you an email at</string>
+    <string name="postsignup_5">Follow the instructions in the email to verify your account and access all BeClub features</string>
+    <string name="postsignup_get_started">Get Started</string>
+    <string name="postsignup_why_required">Why is this step required?</string>
+    <string name="postsignup_why_verification">Why we require this step</string>
+    <string name="postsignup_why_verification_text">To become a fully registered BeClub, we\'ll ask you to verify the email address you used to create your account. That way, we will be able to make sure that any rewards you receive via BeClub will be sent to the right address and that the email address doesn\'t belong to someone else. When you complete the registration process, we\'ll send you an email requesting that you verify your account. To verify, just follow the link in the message. You will be able to earn BeDollars but you will not be able to redeem any rewards until your account has been verified.</string>
+
+
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="forgot_password_title">Forgotten your password?</string>
+    <string name="forgot_password_message">Not to worry! Fill in your email below to receive instructions on how can reset your password.</string>
+    <string name="forgot_password_email">Your email address</string>
+    <string name="forgot_password_sent"> We\'ve just sent you an email. Check your inbox and follow the instructions</string>
+
+    <string name="signin">Sign In</string>
+    <string name="signin_email">Email address</string>
+    <string name="signin_password">Password</string>
+
+    <string name="already_existing">Hey! Looks like you\'re already earning BeDollars</string>
+    <string name="already_existing_message">Choose your preferred email address to become an exclusive BeClub member</string>
+    <string name="already_use_another">Use another account</string>
+
+    <string name="bestore_redeem">Redeem</string>
+    <string name="bestore_terms">Terms of use</string>
+    <string name="bestore_redemption_instructions">Redemption instructions</string>
+    <string name="bestore_expire">Expires on:</string>
+    <string name="bestore_not_enough">Oh no! You don\'t have enough BeDollars for this reward yet</string>
+    <string name="bestore_discover">Earn more BeDollars</string>
+    <string name="bestore_url_coupon">Click here to view your reward</string>
+    <string name="bestore_url_and_number_coupon">Click here to use your reward</string>
+    <string name="bestore_url_follow">It\'s easy. Follow the link to get your coupon</string>
+    <string name="bestore_counter_show">Show this at the checkout counter</string>
+    <string name="bestore_buydialog_title">Confirm</string>
+    <string name="bestore_buydialog_message">Are you sure you want to redeem this reward for %dBeDollars?</string>
+    <string name="bestore_buydialog_positive">Continue</string>
+    <string name="bestore_coupon_not_available">Oh no! This coupon isn\'t available right now. Check back for more details</string>
+    <string name="bestore_buydialog_negative">Cancel</string>
+    <string name="bestore_buydialog_bought">Great! Your reward has now been saved to your wallet</string>
+    <string name="bestore_buydialog_archive">Archive</string>
+    <string name="bestore_archived_message">Your reward has now been archived</string>
+    <string name="bestore_stores_button">See all participating stores</string>
+    <string name="bestore_empty">We\'re sorry but there are no rewards in the BeStore right now. We\'re working hard to bring you the latest great deals. Check back soon!</string>
+    <string name="bestore_missing_bedollars_for_reward">Keep going! You just need %d more BeDollars</string>
+    <string name="bestore_bedollars_for_reward">Nice! You\'ve got enough BeDollars</string>
+    <string name="bestore_missing_bedollars_percentage">%d%%</string>
+
+    <string name="earn_bedollars_brands">BRANDS</string>
+    <string name="earn_bedollars_apps">APPS</string>
+    <string name="earn_bedollars_instore_header_title">COMPLETE MISSIONS TO EARN BEDOLLARS</string>
+    <string name="earn_bedollars_online_header_title">EARN BEDOLLARS WHEN YOU BUY THESE ITEMS</string>
+    <string name="earn_bedollars_t">Pick up awesome rewards from <b>top brands</b></string>
+    <string name="earn_bedollars_map_title">Pick up <b>BeDollars</b> by visiting stores near you now</string>
+    <string name="earn_bedollars_walkin_main_title"><![CDATA[Find out how you can earn BeDollars simply by <b>walking into your favorite stores</b>]]></string>
+    <string name="earn_bedollars_walkin_anytime_title">Walk-in mission</string>
+    <string name="earn_bedollars_walkin_anytime_desc">Check-in at the store</string>
+    <string name="earn_bedollars_walkin_specialday_title">Special day walk-in</string>
+    <string name="earn_bedollars_walkin_specialday_desc">Check-in at the store on:</string>
+    <string name="earn_bedollars_walkin_desc">Check-in as soon as you get to the store!</string>
+    <string name="earn_bedollars_walkin_done">Done!</string>
+    <string name="earn_bedollars_walkin_store_closed">Sorry, the store\'s closed right now, come back later</string>
+    <string name="earn_bedollars_scanning_title">Scan now</string>
+    <string name="earn_bedollars_scanning_desc">Scan the products shown</string>
+    <string name="earn_bedollars_scann_to_earn">You\'ll pick up an awesome reward</string>
+    <string name="earn_bedollars_multiplescanning_windowtitle">Scan any product of your choice</string>
+    <string name="earn_bedollars_multiplescanning_title">Look for the closest store</string>
+    <string name="earn_bedollars_multiplescanning_desc">Then scan any product of your choice</string>
+    <string name="earn_bedollars_multiplescanning_stores">STORES NEAR YOU</string>
+    <string name="earn_bedollars_multiplescanning_top"><![CDATA[You are at <b>%s</b>. Scan the number of products listed below to earn]]></string>
+    <string name="earn_bedollars_multiplescanning_nolocation"><![CDATA[<font size="18"><b>Oops! Looks like you aren\'t in a store yet.</b></font><br><br>Go to the store and start scanning.]]></string>
+    <string name="earn_bedollars_multiplescanning_already_done"><![CDATA[<font size="18"><b>Oops! Looks like you already completed this mission.</b></font><br><br>Come back in %s to complete it again.]]></string>
+    <string name="earn_bedollars_multiplescanning_already_done_forever"><![CDATA[<font size="18"><b>Oops! Looks like you already completed this mission.</b></font>]]></string>
+    <string name="earn_bedollars_multiplescanning_scan1">Scan any product of your choice</string>
+    <string name="earn_bedollars_multiplescanning_scanother">Add another one!</string>
+    <string name="earn_bedollars_multiplescanning_scanned">Scanned</string>
+    <string name="earn_bedollars_multiplescanning_stores_title">Get to one of these stores and scan any product you find</string>
+    <string name="earn_bedollars_multiplescanning_stores_title_w_reward">Get to one of these stores and scan any product you find to earn:</string>
+    <string name="earn_bedollars_action_button_text">All %s stores</string>
+    <string name="earn_bedollars_action_button_checkin">Check-in</string>
+    <string name="earn_bedollars_action_button_checkin_fail">You\'re not near enough to the store</string>
+    <string name="earn_bedollars_action_checkin_title">Go to the nearest participating store to get an exclusive reward</string>
+    <string name="earn_bedollars_scan_action_button">Scan to get</string>
+    <string name="earn_bedollars_scan_title">Scan the barcode to earn BeDollars. <b>Easy peasy!</b></string>
+    <string name="earn_bedollars_scan_scanned">Scanned</string>
+    <string name="earn_bedollars_scan_popup_title">Scan-tastic!</string>
+    <string name="earn_bedollars_scan_popup1">Hurray!</string>
+    <string name="earn_bedollars_scan_popup2">You\'ve just earned</string>
+    <string name="earn_bedollars_scan_popup3">%d BeDollars</string>
+    <string name="earn_bedollars_scan_failed_title">Validation failed</string>
+    <string name="earn_bedollars_scan_failed_message">Hm, something went a bit wrong.\n\nAre you sure you scanned the right product? Try again</string>
+    <string name="earn_bedollars_scan_failed_positive">Scan again</string>
+    <string name="earn_bedollars_scan_failed_negative">Cancel</string>
+    <string name="earn_bedollars_scan_validating">Validating code...</string>
+    <string name="earn_bedollars_online_title">Shop online</string>
+    <string name="earn_bedollars_online_subtitle">Earn BeDollars when you buy online</string>
+    <string name="earn_bedollars_web_top_title">Shop at <b>%s</b> to earn extra BeDollars</string>
+    <string name="earn_bedollars_web_infotext">We\'ll match the price of your purchases in BeDollars when you click below to shop online at <strong>%s</strong> via the Beclub.\nWe\'ll send you a message in a couple of days with your updated account information.</string>
+    <string name="earn_bedollars_web_button">Visit the online store</string>
+    <string name="earn_bedollars_visit_bestore_button">Visit the BeStore</string>
+    <string name="earn_bedollars_mission_pickup">And pick up:</string>
+    <string name="earn_bedollars_mission_reward_details">View reward details</string>
+
+    <string name="collective_mission_title">Invite your friends</string>
+    <string name="collective_mission_subtitle">Everybody wins!</string>
+
+
+    <string name="earn_bedollars_reward_mission_completed">You made it!</string>
+    <string name="earn_bedollars_empty">We\'re sorry, but it looks like there are no missions available right now. Check back soon to find out the different ways you\'ll be able to earn BeDollars</string>
+    <string name="earn_bedollars_misson_completed_share">Did we make your day?\nWant to share the good news with your friends?</string>
+    <string name="earn_bedollars_misson_completed_view_reward">View my reward</string>
+
+    <string name="mission_completed_popup_walkin">Walk-in completed!</string>
+
+    <string name="profile">Profile</string>
+    <string name="profile_wallet">Wallet</string>
+    <string name="profile_wallet_valid">Valid until</string>
+    <string name="profile_wallet_archive_dialog">Are you sure you want to archive this reward?</string>
+
+    <string name="profile_balance">BALANCE</string>
+    <string name="profile_balance_scanned_title">Product scanned</string>
+    <string name="profile_balance_online_title">Online mission</string>
+    <string name="profile_balance_cardspring_title">CardSpring mission completed</string>
+    <string name="profile_balance_walkin_title">Walk-in completed</string>
+    <string name="profile_reward_title">Reward redeemed</string>
+    <string name="profile_balance_multiplescan">Products scanned</string>
+    <string name="profile_balance_generic">You got a reward</string>
+    <string name="profile_balance_rewarded">App challenge completed</string>
+    <string name="profile_balance_prereg">BeDollars earned</string>
+    <string name="profile_balance_registered">Registered</string>
+    <string name="profile_balance_inapp">BeDollars earned playing our apps</string>
+    <string name="profile_balance_takeapicture_title">Picture mission won</string>
+
+    <string name="profile_wallet_empty"><![CDATA[<big><b>Yikes! Your wallet is empty</b></big><br><br>Why not start redeeming BeDollars for great rewards now.]]></string>
+
+    <!--spinner profile -->
+    <string-array name="spinner_profile_sections">
+        <item>Wallet</item>
+        <item>Balance</item>
+    </string-array>
+    <!--spinner waller -->
+    <string-array name="spinner_profile_wallet_sections">
+        <item>Active rewards</item>
+        <item>Archive</item>
+    </string-array>
+
+
+    <string name="settings_main_account_settings">ACCOUNT SETTINGS</string>
+    <string name="settings_main_account_info">Account info</string>
+    <string name="settings_main_change_password">Change your password</string>
+    <string name="settings_main_app_settings">APP SETTINGS</string>
+    <string name="settings_main_push_notifications">Notifications</string>
+    <string name="settings_main_units">Distance units</string>
+    <string name="settings_main_units_metric">Metric system</string>
+    <string name="settings_main_units_imperial">Imperial system</string>
+
+    <string name="settings_push_notify_title">Get notified about the missions and rewards that matter to you the most! From time to time we\'d like to send you some info on the things that you\'d like to hear.\n\nPick the messages you\'d like to receive from the list below</string>
+    <string name="settings_push_notify_subtitle">Don\'t forget you need to have push notifications enabled for the BeClub app. To change your push notification settings, just close the app, go to Settings, Notifications, BeClub and enable push.</string>
+    <string name="settings_push_location_based">Cool things near me</string>
+    <string name="settings_push_beclub_updates">BeClub news blasts</string>
+    <string name="settings_push_user_highlights">Personalized push</string>
+    <string name="settings_push_bedollars_earn">New ways to earn BeDollars</string>
+
+    <string name="settings_profile_personal_details">PERSONAL DETAILS</string>
+    <string name="settings_profile_personal_required">This info is required by our Terms of Service. It also allows us to provide you with a better Beclub experience. We will not share your info with third parties.</string>
+
+    <string name="settings_profile_delete">Delete account</string>
+    <string name="settings_profile_edit">Edit profile</string>
+    <string name="settings_profile_update">Update profile</string>
+    <string name="settings_push_update">Update push settings</string>
+    <string name="settings_profile_updated">Profile updated!</string>
+    <string name="settings_profile_picture_updated">Profile picture updated!</string>
+
+    <string name="settings_changepassword_oldpwd">Old password</string>
+    <string name="settings_changepassword_newpwd">New password</string>
+    <string name="settings_changepassword_newpwdagain">Repeat new password</string>
+    <string name="settings_changepassword_show">Show password</string>
+    <string name="settings_changepassword_button">Change password</string>
+    <string name="settings_changepassword_changed">Password changed</string>
+
+    <string name="tutorial_skip">Skip</string>
+    <string name="tutorial_next">Next</string>
+    <string name="tutorial_start">Get started</string>
+
+
+    <string name="tutorial_mainText1">Welcome to the BeClub!</string>
+    <string name="tutorial_descText1">The exciting new way for you to pick up all kinds of rewards and goodies.</string>
+
+    <string name="tutorial_mainText2">Play Fruit Ninja!</string>
+    <string name="tutorial_descText2">Keep playing with the apps you love to earn BeDollars and great rewards.</string>
+
+    <string name="tutorial_mainText3">Earn BeDollars</string>
+    <string name="tutorial_descText3">Earn BeDollars when you complete different types of missions.</string>
+
+    <string name="tutorial_mainText4">Spend BeDollars</string>
+    <string name="tutorial_descText4">Keep earning BeDollars to unlock the cool rewards you can find in the Redeem section.</string>
+
+    <string name="tutorial_mainText5">My Wallet</string>
+    <string name="tutorial_descText5">And remember, you\'ll be able to find all your redeemed rewards in your wallet.</string>
+
+
+    <string name="version_too_new_version">New update available!</string>
+    <string name="version_too_old_title">Don\'t be left behind</string>
+    <string name="version_too_old_text">Update the BeClub app now and access our latest awesome rewards.</string>
+    <string name="version_too_old_button">Update Now</string>
+    <string name="beclub_require_localization">We\'re having a bit of trouble locating you right now. This might be because the location settings on your phone have been disabled for the BeClub app. Try turning your locations services off and on again.</string>
+    <string name="beclub_tap_againt_to_exit">Tap again to exit BeClub</string>
+
+
+    <!--SHARES DATA-->
+    <string name="social_share_app_link">http://www.beclub.com/app/download</string>
+    <string name="social_share_app_rewards_giftcards_desc">I\'m using the BeClub app to pick up awesome rewards and gift cards. Check it out! I think you\'d really like it.</string>
+    <string name="social_share_app_rewards_giftcards_title">BeClub</string>
+
+    <string name="tell_a_friend">Tell a Friend</string>
+    <string name="tell_a_friend_title">Hey! Having fun with the BeClub?\nHow about giving us a shout-out!</string>
+    <string name="tell_a_friend_facebook_title">Facebook</string>
+    <string name="tell_a_friend_facebook_desc">Tell your friends about us</string>
+    <string name="tell_a_friend_twitter_title">Share on Twitter</string>
+    <string name="tell_a_friend_twitter_desc">Tweet your followers about the BeClub</string>
+    <string name="tell_a_friend_sms_title">Text your contacts</string>
+    <string name="tell_a_friend_sms_desc">Send your friends an SMS</string>
+    <string name="tell_a_friend_email_title">Write an email</string>
+    <string name="tell_a_friend_email_desc">Write to your friends about the BeClub</string>
+    <string name="tell_a_friend_gplus_title">Share on Google+</string>
+    <string name="tell_a_friend_gplus_desc">Let your friends know about the BeClub</string>
+    <string name="social_toast_shared">Thanks for sharing the BeClub with your friends</string>
+
+    <!-- COLLECTIVE MISSION -->
+    <string name="collective_mission_activity_title">Invite %1$d friends who are new to the BeClub to complete this %2$s mission to pick up a %3$s</string>
+    <string name="collective_mission_activity_reward_details">View reward details</string>
+    <string name="collective_mission_activity_remember">The clock is ticking! Your friends need to download and register to the BeClub before time runs out!</string>
+    <string name="collective_mission_activity_time_remaining_days">Time remaining: {days}days {hours}h</string>
+    <string name="collective_mission_activity_time_remaining_hours">Time remaining: {hours}h {minutes}m</string>
+    <string name="collective_mission_activity_friend_total">%d of your friends still need to register!</string>
+    <string name="collective_mission_activity_invite_title_zero">You need to invite at least %d friends </string>
+    <string name="collective_mission_activity_invite_title_more_than_zero">Hurray! You\'ve invited enough friends! Remind them to register to pick up your awesome reward  </string>
+    <string name="collective_mission_activity_invite">Invite friends</string>
+    <string name="collective_mission_activity_invite_sent">Invitation sent! Go team!</string>
+
+    <string name="collective_mission_contacts_send">Send invitation</string>
+    <string name="collective_mission_contacts_friends_selected">{n} friends selected</string>
+    <string name="collective_mission_contacts_friends_min">You need to select {n} friends</string>
+
+    <string name="collective_mission_dialog_title">How would you like to invite your friends?</string>
+    <string name="collective_mission_dialog_facebook">Facebook</string>
+    <string name="collective_mission_dialog_sms_text">Text</string>
+    <string name="collective_mission_dialog_later">Later</string>
+
+    <string name="collective_misson_completed_share">Did we make your day? Why not share the good news with your friends</string>
+    <string name="collective_mission_pick_up_rewards">You can now find this reward in your wallet</string>
+    <string name="collective_mission_pick_up_bedollars">Use your shiny new BeDollars to pick up great\nrewards</string>
+    <string name="collective_mission_congratualtions">Congratulations!</string>
+    <string name="collective_mission_thanks_friends">It\'s raining BeDollars up in here! Share the love and thank your %1$d friends who helped you with this mission.</string>
+    <string name="collective_mission_qnt_bedollars">+%d BeDollars</string>
+    <string name="collective_mission_wallet">Take me to the wallet</string>
+    <string name="collective_mission_thanks_friends_reward">Share the love and thank your %1$d friends who helped you with this mission.</string>
+    <string name="collective_mission_wallet_find">You can now find this reward in your wallet</string>
+    <string name="collective_mission_invite_friends">INVITE YOUR FRIENDS</string>
+    <string name="collective_mission_invited_friends">%d friends invited</string>
+    <string name="collective_mission_registered_friends">%d friends have registered to BeClub</string>
+    <string name="collective_mission_progress_title_zero">You\'ve got to invite some friends before you can remind the to join the BeClub. Get started now!</string>
+    <string name="collective_mission_progress_title_more">Have you let the others know how fun the BeClub is yet?</string>
+
+    <string name="collective_mission_check_progress">CHECK YOUR PROGRESS</string>
+
+
+    <!-- VERIFICATION EMAIL -->
+    <string name="verification_email_sent">Verification email sent</string>
+    <string name="verification_email_send_again">Send me the email again</string>
+    <string name="email_not_verified">You\'ll need to verify your email address before you can redeem this reward.</string>
+    <string name="email_not_verified_resend">Send me the verification email again</string>
+    <string name="email_not_verified_popup_title">Please verify your email</string>
+    <string name="email_not_verified_popup_text">You\'ll need to verify your email address before you can complete this mission.</string>
+    <string name="email_not_verified_popup_subtext">Can\'t find the email?</string>
+    <string name="email_not_verified_popup_whyreq">Why we require this step?</string>
+    <string name="email_not_verified_popup_later">Later</string>
+
+    <!-- DEVICE BANNED DIALOG -->
+    <string name="device_banned_title">Access denied</string>
+    <string name="device_banned_text">Unfortunately your account was found in violation of the BeClub’s Terms of Service and has been closed.\n\nWe want everybody to be able to earn BeDollars fairly so we are closing the accounts of those who do not follow the BeClub rules.\n\nYou will no longer be able to access the BeClub.</string>
+    <string name="device_banned_logout">Log out</string>
+
+    <!-- NOTIFICATIONS -->
+    <string name="gimbal_notification_title">News Flash!</string>
+    <string name="gimbal_notification_body">There\'s a mission nearby at %s. Check the app to find out more! Let\'s go!</string>
+
+    <!-- CARD SPRING-->
+    <string name="card_io_app_token">12f941a0f44940aa957f4f84d414e69e</string>
+    <string name="cards_no_cards_connected">No cards connected your BeClub account to access exclusive discounts and earn BeDollars every time you shop!</string>
+    <string name="cards_connect_your_cards">Sound good? Why not link your card now? We\'ll reward your first purchase.</string>
+    <string name="cards_connect_a_card">Connect a card now</string>
+    <string name="cards_verify_email_title">To connect your card, first you\'ll have to verify your email address.</string>
+    <string name="cards_verify_email_subtitle">All you need to do is click on the verify link in that email to access all of the features the BeClub has to offer.</string>
+    <string name="cards_verify_email_subtitle2">Don\'t forget to check your spam folder.</string>
+    <string name="cards_verify_email_name">Hey %s</string>
+    <string name="cards_deleting_card">Deleting card…</string>
+    <string name="cards_deleted_successfully">Card deleted successfully.</string>
+    <string name="cards_confirm_delete_body">Are you sure you want to delete this card? Don\'t forget, linking your card allows you to access our top rewards.\n\nWe\'ll delete all information related to purchases made with this card in one week.</string>
+    <string name="cards_confirm_yes">Delete card</string>
+    <string name="cards_confirm_no">No thanks</string>
+    <string name="cards_confirm_delete_title">Delete my card</string>
+    <string name="cards_link_a_card">LINK A CARD</string>
+    <string name="cards_scan_card_details">Scan card details</string>
+    <string name="cards_insert_your_card_details">INSERT YOUR CARD DETAILS</string>
+    <string name="cards_insert_card_details_body">Fill in the fields below to connect your card to your BeClub account. Your data will be securely linked to the purchase you make at BeClub partner stores.</string>
+    <string name="cards_link_card_now">Link card now</string>
+    <string name="cards_negative_balance_first_title">Balance below zero</string>
+    <string name="cards_negative_balance_first_upper">Oh no! Your BeDollars balance is negative. This is probably because you returned some purchased items after you had redeemed your BeDollars</string>
+    <string name="cards_negative_balance_first_down">Try to keep your balance positive. Otherwise we may have to freeze your BeClub account and we really don\'t want to lose you.</string>
+    <string name="cards_negative_balance_second_title">Your balance is negative again</string>
+    <string name="cards_negative_balance_second_upper">Oh no! Your BeDollar balance has gone below zero again. This is probably because you returned some purchased items after you had redeemed your BeDollars</string>
+    <string name="cards_negative_balance_second_down">Try to keep your balance positive. Otherwise we may have to freeze your BeClub account and we really don\'t want to lose you.</string>
+    <string name="cards_transaction_activity_title">Your shopping list</string>
+    <string name="cards_transaction_activity_empty_upper">Use this card and pick up even more BeDollars!</string>
+    <string name="cards_transaction_activity_empty_down">Earn BeDollars when you shop! Find out which brands reward your spending by clicking below</string>
+    <string name="cards_transaction_activity_delete_card">Delete this card</string>
+    <string name="cards_transaction_activity_empty_show">Show me how!</string>
+    <string name="cards_add_card_link_my_card">Link my card!</string>
+    <string name="cards_add_card_activity_disclaimer">BeClub will not store your card information. Your data is only used to allow us reward your purchases with BeDollars.</string>
+    <string name="cards_add_card_invalid_card_number">Invalid card number</string>
+    <string name="cards_added_card_title">Success! Your card has been added to your BeClub account!</string>
+    <string name="cards_added_card_bottom">Use your linked card at checkout and get ready to start earning BeDollars when you shop!</string>
+    <string name="cards_added_card_action_button">Check out ways to earn</string>
+    <string name="cards_card_mission_activity_title">Buy with the BeClub for the first time and earn bonus BeDollars</string>
+    <string name="cards_card_mission_activity_plus_get">+ You\'ll get</string>
+    <string name="cards_card_mission_activity_already_linked">Use one of your linked cards to get this awesome offer!\nYou’ve already linked:</string>
+    <string name="cards_card_mission_activity_add_new_card">Add a new card</string>
+    <string name="cards_card_mission_activity_discount_from">You\'ll get a discount when you buy from:</string>
+    <string name="cards_profile_balance_header">BeDollars earned for purchase missions will be credited to your account soon! Check back for updates</string>
+
+    <string name="popup_you_made_it_title"><b>You made it!</b> You just earned</string>
+    <string name="popup_want_more_bedollars"><b>Want to earn even more BeDollars?</b>\nLink your card and watch your balance grow!</string>
+    <string name="popup_you_just_pick_up"><b>You\'ve just picked up</b></string>
+    <string name="popup_thanks_for_shopping"><b>Thanks for shopping at [Brand store]</b></string>
+
+    <string name="earn_bedollars_cardspring_title">Purchase with card</string>
+    <string name="earn_bedollars_cardspring_desc">Spend with your credit card to earn even more BeDollars</string>
+    <string name="earn_bedollars_takeapicture_title">Get picture perfect</string>
+    <string name="earn_bedollars_takeapicture_desc">Take a photo and share it with us</string>
+    <string name="picture_mission_take_photo_with_brand">Take a picture and share it on Facebook</string>
+    <string name="picture_mission_header_title">SHOW YOUR HALLOWEEN STYLE</string>
+    <string name="picture_mission_get_lots_likes">Get your friends to like the photo</string>
+    <string name="picture_mission_take_another_photo">Take another photo</string>
+    <string name="picture_mission_share_on_facebook">Share on Facebook</string>
+    <string name="picture_mission_default_share_message">Like my photo and help me win the #BeClub!</string>
+    <string name="picture_mission_third_step_message">The photo with the most likes wins!</string>
+    <string name="picture_mission_great_shot">Great shot!\nLooking good fancy pants!</string>
+    <string name="picture_mission_like_from_friends">Now make sure to get your friends to like the photo to be in to win</string>
+    <string name="picture_mission_mission_finished">Aw snap!\nThe mission is finished!</string>
+    <string name="picture_mission_check_back_soon">Check back again soon and keep snapping for your chance to become a BeClub selfie superstar</string>
+    <string name="picture_mission_looser_next_time">Next time it could be you!</string>
+    <string name="picture_mission_looser_continue_snapping">Get snapping and you could be in with a chance to win!</string>
+    <string name="picture_mission_winner_woo_hoo">Woo hoo!!</string>
+    <string name="picture_mission_winner_beclubber">You\'re a regular shutterbug and the best BeClubber in all the land!</string>
+    <string name="picture_mission_winner_where_spend_bedollars">Have you decided how you\'d like to spend those shiny BeDollars yet?</string>
+    <string name="picture_mission_winner">YOU\'RE THE WINNER!!!</string>
+    <string name="picture_mission_and_winner_is">AND THE WINNER IS...</string>
+
+    <string name="earn_bedollars_online_empty">We\'re sorry, but it looks like there are no products available right now. Check back soon to find out the different ways you\'ll be able to earn BeDollars</string>
+    <string name="online_check_your_inbox">Check your inbox for our mail!</string>
+    <string name="online_check_inbox_failed">We can\'t send you this email, please contact us.</string>
+    <string name="online_send_link_my_address">Send me the details</string>
+    <string name="online_get_it_for">GET IT FOR</string>
+    <string name="online_and_earn">AND EARN</string>
+    <string name="online_click_link_below">Click on either of the links below to get this awesome offer. *</string>
+    <string name="online_buy_from_phone">Buy online now</string>
+    <string name="online_mission_products_for_you">We\'ve selected these products especially for you</string>
+    <string name="online_mission_shop_now">Shop Now!</string>
+</resources>

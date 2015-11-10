@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="b_actionbar_background">#353535</color>
+
+    <color name="b_white">#FFFFFF</color>
+    <color name="b_error_background">#33FF0000</color>
+    <color name="b_warning_background">#fffee5</color>
+    <color name="b_activity_background">#F7F7F7</color>
+    <color name="b_coupon_titles">#666666</color>
+    <color name="b_light_gray">#F7F7F7</color>
+    <color name="b_fb_blue">#304E8B</color>
+    <color name="b_fb_blue_highlighted">#99304E8B</color>
+    <color name="b_fb_light_blue">#365C99</color>
+    <color name="b_green">#62A423</color>
+    <color name="b_green_higlighted">#9962A423</color>
+    <color name="b_light_gray_texts">#CCCCCC</color>
+    <color name="b_gray_texts">#A0A0A0</color>
+    <color name="b_line_divider_top_black">#000000</color>
+    <color name="b_line_divider_top_gray">#dddddd</color>
+    <color name="b_line_divider_bottom_gray">#C9C9C9</color>
+    <color name="b_menu_line_divider">#474747</color>
+    <color name="b_sections_header_text">#808080</color>
+    <color name="b_sections_header_background">#eee</color>
+    <color name="b_yellow_bedollars">#EDAA15</color>
+    <color name="b_menu_gray">#737374</color>
+    <color name="b_bestore_text">#353535</color>
+    <color name="b_bestore_terms">#9A9A9A</color>
+    <color name="b_gray_button">#e1e1e1</color>
+    <color name="b_gray_button_highlighted">#EBEBEB</color>
+
+    <color name="b_cards_infos">#686868</color>
+    <color name="cards_pending">#E58A07</color>
+    <color name="cards_assigned">#62A423</color>
+    <color name="cards_returned">#D1052C</color>
+    <color name="cards_negative_balance_second_time">#C4292D</color>
+
+
+</resources>

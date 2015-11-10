@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/settings"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="101"
+        android:showAsAction="never"
+        android:icon="@drawable/help"
+        android:title="@string/action_help"/>
+
+    <item
+        android:id="@+id/tell_a_friend"
+        android:orderInCategory="101"
+        android:showAsAction="never"
+        android:icon="@drawable/tellafriend"
+        android:title="@string/tell_a_friend"/>
+</menu>

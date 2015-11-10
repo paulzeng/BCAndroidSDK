@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_row_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/brand_mission_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/scan_mission_1" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/balance_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2013/08/29"
+                android:textColor="@color/b_sections_header_text"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/brand_mission_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/balance_date"
+                android:text="New Text"
+                android:textColor="@color/b_bestore_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/brand_mission_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/brand_mission_name"
+                android:text="New Text"
+                android:textColor="@color/b_sections_header_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/line_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/brand_mission_desc"
+                android:text="Pending"
+                android:textStyle="bold"
+                android:textColor="@color/cards_pending"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/line_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_3"
+                android:paddingBottom="8dp"
+                android:text="New Text"
+                android:textColor="@color/b_sections_header_text"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mission_bedollars_amount_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/brand_mission_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="+00.00"
+                android:textColor="@color/b_yellow_bedollars"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/bed_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/bed_small" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mission_reward_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mission"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.4dp"
+            android:background="@color/b_gray_button" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/b_gray_texts"
+            android:text="@string/earn_bedollars_mission_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/mission_reward_image_and_bt"
+                android:layout_width="156dp"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:id="@+id/view_reward_details"
+                    android:layout_width="156dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:background="@drawable/earn_bedollars_corner_top_left"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iv_info"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/info_white" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_toRightOf="@id/mission_reward_image_and_bt"
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:background="@drawable/mission_rew_bg"
+                android:layout_marginLeft="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/mission_reward_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="+00.00"
+                    android:textColor="@color/b_yellow_bedollars"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/bed_small"
+                    android:drawablePadding="5dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#F7F7F7">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collective_mission_congratualtions"
+                        android:textSize="20sp"
+                        android:textColor="#666666"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collective_mission_thanks_friends"
+                        android:textSize="12sp"
+                        android:textColor="#666666"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:id="@+id/tv_brand_name" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/collective_title"
+                android:id="@+id/collective_reward_image_container"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/earn_bedollars_item_border"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/collective_reward_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collective_mission_activity_reward_details"
+                        android:id="@+id/tv_view_reward_details"
+                        android:textColor="@color/b_sections_header_text"
+                        android:textSize="12sp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/info"
+                        android:id="@+id/reward_info"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collective_mission_pick_up_rewards"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#808080"
+                android:textSize="12sp"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:layout_marginTop="15dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/green_button"
+                android:clickable="true"
+                android:id="@+id/rl_visit_wallet"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collective_mission_wallet"
+                    android:id="@+id/textView2"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collective_misson_completed_share"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#808080"
+                android:textColorHighlight="#dddddd"
+                android:clickable="true"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:id="@+id/why_required" />
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/share_buttons_container"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="24dp">
+
+                <ImageButton
+                    android:id="@+id/facebook_share"
+                    android:src="@drawable/facebook_big"
+                    android:background="@drawable/grey_highlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/twitter_share"
+                    android:src="@drawable/twitter_big"
+                    android:background="@drawable/grey_highlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageButton
+                    android:id="@+id/gplus_share"
+                    android:src="@drawable/googleplus_big"
+                    android:background="@drawable/grey_highlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

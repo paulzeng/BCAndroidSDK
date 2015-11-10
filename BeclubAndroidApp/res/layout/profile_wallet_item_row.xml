@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/bestoreItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp"
+        android:background="@drawable/bestore_item_selector">
+
+        <RelativeLayout
+            android:id="@+id/wallet_container"
+            android:paddingBottom="2dp"
+            android:background="@drawable/gray_background_corner_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.beintoo.utils.ui.RoundImageView
+                android:id="@+id/itemImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:minHeight="132dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/wallet_container">
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:textColor="@color/b_bestore_text" />
+
+            <ImageView
+                android:layout_marginRight="15dp"
+                android:id="@+id/archiveItem"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/archive" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

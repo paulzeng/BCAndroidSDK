@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/b_activity_background"
+    android:visibility="gone"
+    android:id="@+id/content"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="New Text"
+        android:id="@+id/web_mission_title"
+        android:textSize="12sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/b_bestore_text" />
+
+    <RelativeLayout
+        android:background="@color/b_line_divider_top_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="115dp"
+        android:id="@+id/mission_amount_container"
+        android:background="@color/b_white"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1$ ="
+            android:id="@+id/web_mission_currency_value"
+            android:textSize="40sp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/web_mission_bedollars_value"
+            android:textSize="40sp"
+            android:textColor="@color/b_yellow_bedollars" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/bed_big" />
+    </LinearLayout>
+    <RelativeLayout
+        android:background="@color/b_line_divider_top_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/earn_bedollars_web_infotext"
+        android:id="@+id/web_mission_info_text"
+        android:textSize="14sp"
+        android:textColor="#686868" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/green_button"
+        android:clickable="true"
+        android:id="@+id/visit_store_button"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/earn_bedollars_web_button"
+            android:id="@+id/textView2"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"/>
+    </RelativeLayout>
+</LinearLayout>

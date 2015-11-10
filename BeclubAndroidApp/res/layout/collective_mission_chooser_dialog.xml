@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/b_green"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/collective_mission_dialog_title"
+            android:textColor="@color/b_white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/collective_mission_fb_share"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/listview_row_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/collective_dialog_share_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/share_fb" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/collective_dialog_share_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/b_line_divider_top_black"
+                android:text="@string/collective_mission_dialog_facebook"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/arrow" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/b_line_divider_bottom_gray" />
+
+    <LinearLayout
+        android:id="@+id/collective_mission_text_share"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/listview_row_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/collective_dialog_share_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/share_message" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/collective_dialog_share_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/b_line_divider_top_black"
+                android:text="@string/collective_mission_dialog_sms_text"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/arrow" />
+
+    </LinearLayout>
+</LinearLayout>

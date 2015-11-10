@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_trackingId">UA-20607240-19</string>
+    <!-- SANDBOX UA-20607240-26-->
+    <!-- PROD UA-20607240-19-->
+
+    <!--Enable automatic activity tracking-->
+    <bool name="ga_autoActivityTracking">false</bool>
+
+    <!--Enable automatic exception tracking-->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <bool name="ga_debug">false</bool>
+</resources>

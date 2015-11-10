@@ -1,0 +1,26 @@
+<resources>
+    <style name="Theme.Beintoo" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/b_activity_background</item>
+        <item name="android:actionBarStyle">@style/Widget.Beintoo.ActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/home_up</item>
+    </style>
+
+
+    <style name="Widget.Beintoo.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:titleTextStyle">@style/Beintoo.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <!-- DIALOG STYLE -->
+    <style name="Fullscreen.Dialog" parent="android:Theme.Holo.Dialog" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <!--<style name="Beintoo.ActionBar.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/b_white</item>
+    </style>-->
+
+
+</resources>

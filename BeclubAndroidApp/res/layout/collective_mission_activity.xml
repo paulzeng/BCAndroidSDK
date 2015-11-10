@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/b_activity_background">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/container"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:paddingBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_collective_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/collective"
+                        android:id="@+id/imageView"
+                        android:layout_centerVertical="true"
+                        android:layout_alignTop="@+id/collective_title" />
+
+                    <TextView
+                        android:id="@+id/collective_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/b_sections_header_text"
+                        android:text="Collective mission test"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_toRightOf="@+id/imageView" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_below="@+id/rl_collective_title"
+                    android:id="@+id/collective_reward_image_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bestore_item_selector">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="132dp"
+                        android:id="@+id/rl_only_bedollars_container"
+                        android:visibility="gone"
+                        android:background="@drawable/mission_rew_bg">
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentTop="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+10"
+                                android:id="@+id/tv_qnt_bedollars"
+                                android:layout_gravity="center"
+                                android:textSize="32sp"
+                                android:textStyle="bold"
+                                android:textColor="#D28200"
+                                android:layout_centerVertical="true" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imageView2"
+                                android:layout_toRightOf="@+id/tv_qnt_bedollars"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/bed_big"
+                                android:layout_marginLeft="8dp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <com.beintoo.utils.ui.RoundImageView
+                        android:id="@+id/collective_reward_image"
+                        android:layout_width="match_parent"
+                        android:padding="1dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:visibility="visible"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/linearLayout"
+                        android:layout_below="@+id/collective_reward_image">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/collective_mission_activity_reward_details"
+                            android:id="@+id/tv_view_reward_details"
+                            android:textColor="@color/b_sections_header_text"
+                            android:textSize="12sp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:layout_width="46dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/info"
+                            android:id="@+id/reward_info"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/b_activity_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/b_sections_header_text"
+                    android:text="@string/collective_mission_activity_remember"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/collective_time_remaining"
+                    android:textColor="@color/b_line_divider_top_black"
+                    android:text=""
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="14sp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/collective_mission_invite_friends" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/b_line_divider_bottom_gray" />
+
+                <LinearLayout
+                    android:id="@+id/invited_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/invitefriends" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/invited_friends_count"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/collective_mission_invited_friends" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/collective_spread"
+                    android:textColor="@color/b_gray_texts" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/actionButton"
+                android:layout_width="fill_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/green_button"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/actionButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="@string/collective_mission_activity_invite"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/collective_mission_check_progress" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/b_line_divider_bottom_gray" />
+
+            <LinearLayout
+                android:id="@+id/registered_friends"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/friends_registered_icon"
+                    android:src="@drawable/friendreggreen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/registered_friends_count"
+                    android:text="@string/collective_mission_registered_friends" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/collective_friends_progress_title"
+                android:textColor="@color/b_gray_texts" />
+
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/green_progress_bar"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/collective_progress_bar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/collective_time_friends_count"
+                android:textColor="@color/b_green"
+                android:background="@drawable/earn_bedollars_item_border"
+                android:textSize="12sp"
+                android:text="@string/collective_mission_activity_friend_total"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

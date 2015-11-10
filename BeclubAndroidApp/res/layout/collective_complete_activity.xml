@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#F7F7F7">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <ImageView
+                    android:layout_width="136dp"
+                    android:layout_height="162dp"
+                    android:id="@+id/imageViewSx"
+                    android:src="@drawable/sx_bed"
+                    android:adjustViewBounds="false"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="136dp"
+                    android:layout_height="162dp"
+                    android:id="@+id/imageViewDx"
+                    android:src="@drawable/dx_bed"
+                    android:adjustViewBounds="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collective_mission_congratualtions"
+                        android:textSize="20sp"
+                        android:textColor="#666666"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collective_mission_thanks_friends"
+                        android:textSize="12sp"
+                        android:textColor="#666666"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:id="@+id/tv_brand_name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collective_mission_qnt_bedollars"
+                        android:id="@+id/tv_qnt_bedollars"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#D28200"
+                        android:layout_marginTop="25dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collective_mission_pick_up_bedollars"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#808080"
+                android:textSize="12sp"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:layout_marginTop="5dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/green_button"
+                android:clickable="true"
+                android:id="@+id/rl_visit_bestore"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/earn_bedollars_visit_bestore_button"
+                    android:id="@+id/textView2"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collective_misson_completed_share"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#808080"
+                android:textColorHighlight="#dddddd"
+                android:clickable="true"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:id="@+id/why_required" />
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/share_buttons_container"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="24dp">
+
+                <ImageButton
+                    android:id="@+id/facebook_share"
+                    android:src="@drawable/facebook_big"
+                    android:background="@drawable/grey_highlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/twitter_share"
+                    android:src="@drawable/twitter_big"
+                    android:background="@drawable/grey_highlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageButton
+                    android:id="@+id/gplus_share"
+                    android:src="@drawable/googleplus_big"
+                    android:background="@drawable/grey_highlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

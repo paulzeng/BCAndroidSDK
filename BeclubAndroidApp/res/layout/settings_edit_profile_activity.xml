@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/personal_details"
+                android:textColor="@color/b_green"
+                android:id="@+id/section_name" />
+
+            <RelativeLayout
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_below="@id/section_name"
+                android:background="@color/b_green" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/settings_profile_personal_required"
+            android:textColor="@color/b_gray_texts" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/personal_details"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/firstname"
+                    android:layout_marginTop="30dp"
+                    android:hint="@string/personal_details_firstname"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:textColor="@color/b_gray_texts"
+                    android:singleLine="true" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.beintoo.utils.ui.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/user_image_profile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/change_profile_pict"
+                        android:layout_below="@id/user_image_profile" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/b_error_background"
+                android:gravity="center"
+                android:text="@string/personal_details_firstname_error"
+                android:id="@+id/error_firstname"
+                android:visibility="gone" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastname"
+                android:layout_marginTop="10dp"
+                android:hint="@string/personal_details_lastname"
+                android:textSize="14sp"
+                android:clickable="false"
+                android:textColor="@color/b_gray_texts"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/b_error_background"
+                android:gravity="center"
+                android:text="@string/personal_details_lastname_error"
+                android:id="@+id/error_lastname"
+                android:visibility="gone" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/birthday"
+                android:layout_marginTop="10dp"
+                android:hint="@string/personal_details_birthday"
+                android:textSize="14sp"
+                android:clickable="false"
+                android:editable="false"
+                android:textColor="@color/b_gray_texts"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/b_error_background"
+                android:gravity="center"
+                android:text="@string/personal_details_birthday_error"
+                android:id="@+id/error_birthday"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_details_male"
+                    android:clickable="false"
+                    android:id="@+id/male" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_details_female"
+                    android:clickable="false"
+                    android:id="@+id/female" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/b_error_background"
+                android:gravity="center"
+                android:text="@string/personal_details_gender_error"
+                android:id="@+id/error_gender"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/green_button"
+            android:clickable="true"
+            android:id="@+id/update_profile"
+            android:visibility="gone"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_profile_update"
+                android:id="@+id/textView2"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

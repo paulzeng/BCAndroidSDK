@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_header"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/b_activity_background"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.beintoo.utils.ui.CircleImageView
+            android:id="@+id/profile_member_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/profile_member_img"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/profile_member_name_surname"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/b_bestore_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/profile_member_email"
+                android:textColor="@color/b_sections_header_text"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/b_line_divider_bottom_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+</LinearLayout>
+
+
